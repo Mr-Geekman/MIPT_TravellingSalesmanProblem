@@ -1,12 +1,8 @@
-#include <iostream>
 #include "Tester.hpp"
-#include "TravellingSalesmanProblem.hpp"
-#include "MSTravellingSalesmanProblem.hpp"
 
 /*
 Планы по решению
-1) разобраться, почему результат MST бывает лучше результата brute +
-2) проверить генерацию точек на "нормальность" и проверить на возможные ошибки реализацию
+1) проверить генерацию точек на "нормальность" и проверить на возможные ошибки реализацию
 */
 
 int main() {
