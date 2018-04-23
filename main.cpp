@@ -6,7 +6,7 @@
 */
 
 int main() {
-    Tester tester(4, 10, 5);
+    Tester tester(4, 10, 2);
     tester.draw_statistics();
     return 0;
 }
