@@ -10,7 +10,7 @@ TravellingSalesmanProblem::TravellingSalesmanProblem(std::vector<std::pair<doubl
     std::vector<int> path = {};
     generate_path(points, used, path);
 }
-void TravellingSalesmanProblem::generate_path(std::vector<std::pair<double, double>>& points, std::vector<bool> used, std::vector<int> path) {
+void TravellingSalesmanProblem::generate_path(std::vector<std::pair<double, double>>& points, std::vector<bool>& used, std::vector<int>& path) {
     bool flag = false;
     for(int i = 0; i < used.size(); ++i) {
         if(!used[i]) {
@@ -26,12 +26,13 @@ void TravellingSalesmanProblem::generate_path(std::vector<std::pair<double, doub
         distance = std::min(compute_distance(points, path), distance);
     }
 }
-double TravellingSalesmanProblem::compute_distance(std::vector<std::pair<double, double>>& points, std::vector<int> path) const {
+double TravellingSalesmanProblem::compute_distance(std::vector<std::pair<double, double>>& points, std::vector<int>& path) const {
     double curr_distance = 0;
     path.push_back(path[0]);
     for(int i = 0; i < path.size() - 1; ++i) {
         curr_distance += hypot(points[path[i]].first - points[path[i + 1]].first, points[path[i]].second - points[path[i + 1]].second);
     }
+    path.pop_back();
     return curr_distance;
 }
 double TravellingSalesmanProblem::get_distance() const {

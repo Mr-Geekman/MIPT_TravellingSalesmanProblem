@@ -1,6 +1,5 @@
-// Реализация системы непересекающихся множеств
+// Реализация класса системы непересекающихся множеств
 
-#include <vector>
 #include "DisjointSet.hpp"
 
 DisjointSet::DisjointSet(int size) {

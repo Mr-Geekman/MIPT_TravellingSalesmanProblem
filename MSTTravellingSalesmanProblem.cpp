@@ -20,7 +20,6 @@ MSTTravellingSalesmanProblem::MSTTravellingSalesmanProblem(std::vector<std::pair
         }
     }
     MSTBoruvka MST(graph);
-    CArcWeightedGraph a = MST.get_tree();
     CListWeightedGraph tree(MST.get_tree());
     // Выполняем DFS и он возвращает нам последовательность обхода точек
     std::vector<int> path = tree.dfs(0); // Тщательно проверить код у этой штуки

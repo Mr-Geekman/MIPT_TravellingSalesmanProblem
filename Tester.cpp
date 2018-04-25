@@ -14,12 +14,6 @@ Tester::Tester(int from, int to, int num_of_repetitions) {
         test_with_points(i, num_of_repetitions);
     }
 }
-std::vector<double> Tester::get_average_factors() const {
-    return average_factors;
-}
-std::vector<double> Tester::get_standart_factor_deviations() const {
-    return standart_factor_deviations;
-}
 void Tester::draw_statistics() const {
     for(int i = from; i <= to; ++i) {
         std::cout.fixed;

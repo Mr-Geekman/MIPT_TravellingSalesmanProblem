@@ -1,4 +1,4 @@
-// Реализация класса, генериющего нормально распределенные точки
+// Реализация класса, генериющего нормально распределенные точки на плоскости
 
 #include <vector>
 #include <cmath>
@@ -15,7 +15,8 @@ void PointsGenerator::generate_points(int n) {
     // Создаем генератор случайных чисел
     std::random_device rd;
     std::mt19937_64 gen(rd());
-    std::uniform_real_distribution<double> dis(0.0, 1.0); // Может ли тут получиться 0?
+    std::uniform_real_distribution<double> dis(0.0, 1.0);
+    // Пользуемся преобразование Бокса-Мюллера
     for(int i = 0; i < n; ++i) {
         double radius = dis(gen);
         double phi = dis(gen);

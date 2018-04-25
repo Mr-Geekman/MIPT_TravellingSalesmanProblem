@@ -12,8 +12,6 @@
 class Tester {
 public:
     Tester(int from, int to, int num_of_repetitions);
-    std::vector<double> get_average_factors() const;
-    std::vector<double> get_standart_factor_deviations() const;
     void draw_statistics() const;
 private:
     void test_with_points(int num_of_points, int num_of_repetitions);
