@@ -3,6 +3,7 @@
 #pragma once
 
 #include <vector>
+#include <utility>
 #include "CArcWeightedGraph.hpp"
 
 class CListWeightedGraph {

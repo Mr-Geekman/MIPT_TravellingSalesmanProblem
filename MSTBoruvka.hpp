@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include "CArcWeightedGraph.hpp"
+
 class MSTBoruvka {
 public:
     explicit MSTBoruvka(CArcWeightedGraph& graph);

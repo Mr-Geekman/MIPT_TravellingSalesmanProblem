@@ -1,6 +1,5 @@
 // Реализация класса, строящего минимальное остовное дерево
 
-#include "CArcWeightedGraph.hpp"
 #include "MSTBoruvka.hpp"
 #include "DisjointSet.hpp"
 
