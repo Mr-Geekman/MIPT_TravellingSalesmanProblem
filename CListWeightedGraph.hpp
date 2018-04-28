@@ -2,7 +2,6 @@
 
 #pragma once
 
-#include <iostream>
 #include <vector>
 #include "CArcWeightedGraph.hpp"
 
@@ -10,7 +9,7 @@ class CListWeightedGraph {
 public:
     CListWeightedGraph();
     explicit CListWeightedGraph(unsigned long int size);
-    explicit CListWeightedGraph(const CListWeightedGraph* from); // МБ тут тоже стоит поменять * на &
+    explicit CListWeightedGraph(const CListWeightedGraph* from);
     explicit CListWeightedGraph(const CArcWeightedGraph& from);
     void add_edge(int from, int to, double weight);
     std::vector<int> dfs(int start_vertex) const;

@@ -1,6 +1,5 @@
 // Реализация класса, решающего задачу коммивояжера при помощи минимального остовного дерева
 
-#include <vector>
 #include <cmath>
 #include "CArcWeightedGraph.hpp"
 #include "MSTBoruvka.hpp"

@@ -1,7 +1,5 @@
 // Реализация класса графа, как списка смежности
 
-#include <iostream>
-#include <vector>
 #include <stack>
 #include "CListWeightedGraph.hpp"
 

@@ -1,11 +1,8 @@
 // Реализация класса, генериющего нормально распределенные точки на плоскости
 
-#include <vector>
 #include <cmath>
 #include <random>
-#include <ctime>
 #include "PointsGenerator.hpp"
-
 
 PointsGenerator::PointsGenerator(int n) {
     generate_points(n);

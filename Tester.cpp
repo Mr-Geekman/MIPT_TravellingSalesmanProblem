@@ -1,7 +1,7 @@
 // Реализация класса, тестирующего решения задачи коммивояжера
 
 #include <iostream>
-#include <vector>
+#include <cmath>
 #include "PointsGenerator.hpp"
 #include "MSTravellingSalesmanProblem.hpp"
 #include "TravellingSalesmanProblem.hpp"

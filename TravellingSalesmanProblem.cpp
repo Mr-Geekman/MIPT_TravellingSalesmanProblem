@@ -1,6 +1,5 @@
 // Реализация класса, решающего задачу коммивояжера при помощи полного перебора
 
-#include <vector>
 #include <cmath>
 #include "TravellingSalesmanProblem.hpp"
 

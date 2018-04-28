@@ -3,10 +3,6 @@
 #pragma once
 
 #include <vector>
-#include <cmath>
-#include "CArcWeightedGraph.hpp"
-#include "MSTBoruvka.hpp"
-#include "CListWeightedGraph.hpp"
 
 class MSTTravellingSalesmanProblem {
 public:

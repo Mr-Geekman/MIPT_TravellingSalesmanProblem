@@ -1,7 +1,5 @@
 // Реализация класса графа, как списка ребер
 
-#include <iostream>
-#include <vector>
 #include <cmath>
 #include "CArcWeightedGraph.hpp"
 

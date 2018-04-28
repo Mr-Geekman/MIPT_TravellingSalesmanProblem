@@ -2,12 +2,7 @@
 
 #pragma once
 
-#include <iostream>
 #include <vector>
-#include "PointsGenerator.hpp"
-#include "MSTravellingSalesmanProblem.hpp"
-#include "TravellingSalesmanProblem.hpp"
-
 
 class Tester {
 public:

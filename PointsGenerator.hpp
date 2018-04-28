@@ -3,8 +3,6 @@
 #pragma once
 
 #include <vector>
-#include <cmath>
-#include <random>
 
 class PointsGenerator {
 public:
