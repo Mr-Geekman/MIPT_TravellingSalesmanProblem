@@ -7,7 +7,7 @@
 
 int main() {
     // tester(m, n, k) значит, что тесты запустятся для количества точек от m до n с числом повторений для каждого количества точек k
-    Tester tester(8, 8, 1);
+    Tester tester(2, 10, 10);
     tester.draw_statistics();
     return 0;
 }
