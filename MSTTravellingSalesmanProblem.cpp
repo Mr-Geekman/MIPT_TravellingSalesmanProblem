@@ -27,7 +27,6 @@ MSTTravellingSalesmanProblem::MSTTravellingSalesmanProblem(std::vector<std::pair
     // Находим вершины с нечетными степенями
     std::unordered_map<int, bool> even_degree{}; // bool понадобится при добавлении паросочетания в дерево
     for(int i = 0; i < graph.size(); ++i) {
-        auto a = tree.adjacent_end(i) - tree.adjacent_begin(i);
         if((tree.adjacent_end(i) - tree.adjacent_begin(i)) % 2 == 1) {
             even_degree[i] = false;
         }
