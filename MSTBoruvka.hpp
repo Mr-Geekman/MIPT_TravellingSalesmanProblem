@@ -6,7 +6,7 @@
 
 class MSTBoruvka {
 public:
-    explicit MSTBoruvka(CArcWeightedGraph& graph);
+    explicit MSTBoruvka(const CArcWeightedGraph& graph);
     CArcWeightedGraph get_tree() const;
 private:
     // Получившийся граф - это дерево

@@ -3,7 +3,7 @@
 #include "MSTBoruvka.hpp"
 #include "DisjointSet.hpp"
 
-MSTBoruvka::MSTBoruvka(CArcWeightedGraph& graph) {
+MSTBoruvka::MSTBoruvka(const CArcWeightedGraph& graph) {
     tree = CArcWeightedGraph(graph.size());
     DisjointSet set(graph.size());
     // Выполняем основной цикл пока не получим дерево (учитываем прямые ребра и обратные)
